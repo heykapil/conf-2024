@@ -1,4 +1,11 @@
-## [CUSEC 2024 Website](https://2024.cusec.net)
+<div align="center">
+<h1><a href="https://2024.cusec.net" target="_blank">CUSEC 2024 Website</a></h1>
+</div>
+
+<div align="center">
+<h4>Designed with 💜 by <a href="https://bavneetsandhu.com/" target="_blank">Bavneet Sandhu</a> </br>
+  Developed with 🧡 by <a href="https://www.linkedin.com/in/mfarabi/" target="_blank">Mumtahin Farabi</a></h4>
+</div>
 
 ![image](https://github.com/cusec/2024/assets/54924158/dd2e480b-88b1-40f9-b024-b3394ca3a4d4)
 
@@ -26,7 +33,6 @@ c. Speaker and Sponsor Promotion: The website should highlight the speakers and 
 
 d. Seamless User Experience: The website should be user-friendly, responsive, and accessible across various devices and browsers. It should offer intuitive navigation, quick access to information, and clear calls to action to enhance user engagement.
 
-e. Social Interaction: The website should integrate social media platforms to encourage networking, information sharing, and collaboration among attendees before, during, and after the conference.
 </details>
 
 <details>
@@ -46,11 +52,9 @@ e. News and Updates: A section for news and updates related to the conference, i
 
 f. FAQ and Support: A comprehensive FAQ section addressing common queries and providing support to attendees, speakers, sponsors, and volunteers.
 
-g. Social Media Integration: Integration with popular social media platforms to enable attendees to share conference updates, connect with fellow participants, and engage in discussions.
+g. Contact and Feedback: A contact form for general inquiries and feedback, along with contact information for specific conference organizers and departments.
 
-h. Contact and Feedback: A contact form for general inquiries and feedback, along with contact information for specific conference organizers and departments.
-
-i. Mobile Responsiveness: Ensuring the website is optimized for mobile devices to provide a seamless experience for users on smartphones and tablets.
+h. Mobile Responsiveness: Ensuring the website is optimized for mobile devices to provide a seamless experience for users on smartphones and tablets.
 
 </details>
 
@@ -72,7 +76,7 @@ d. Branding: Incorporate the CUSEC logo and branding elements throughout the web
 
 [Figma Branding and Style Guide](https://www.figma.com/file/uvPCog1QeAfpLkw3eRxLF1/CUSEC-2024-Branding?type=design&node-id=183-2&mode=design&t=5TeTLy17LDfCZWSR-0)
 
-[Figma Design](https://www.figma.com/file/yx6j4khgn9WgRMLfq8o0kV/Website-Design%2FWireframing?type=design&node-id=1940-86&mode=design&t=smy2YQmjZ1dFw6Id-0)
+[Figma Design](https://www.figma.com/file/YIXUF9Ph6T0ZT2o7gk9QN9/CUSEC-Website-Design?type=design&node-id=6%3A1406&mode=design&t=wJ4S4yLATSqyw3WI-1)
 
 <details>
 <summary>Technical Requirements</summary>
@@ -138,5 +142,11 @@ e. Analytics and Reporting: Integrate analytics tools to track website performan
 - Creating email templates for automatic responses from the [Resend](https://resend.com/home) server to user that filled out the contact form; thus providing confirmation that their message has been received by the team👍
 - Using the [react-toastify](https://www.npmjs.com/package/react-toastify) library to display notifications to the user once they hit the submit button on the contact form🔔
 - Reducing bundle sizes through code refactor, resulting in improved performance🚀
-  
+- Carefully architecting a page before jumping into development. Deeply thinking about the html structure first🏗️
+- Storing data in nested JSON files and accessing them📃
+- You can't use for loops, if...else statements, and switch...case statements directly inside jsx🤯
+- Setting custom screen breakpoints on Tailwind📱
+- Adding calendar integration using the [Add to Calendar Button](https://add-to-calendar-button.com/) library📅
+- Using `git merge main --ff-only` to merge commits from main to dev branch while avoiding merge commits✅
+- Adding a popup modal using the [reactjs-popup](https://react-popup.elazizi.com/) library🎉
 </details>

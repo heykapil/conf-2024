@@ -5,7 +5,8 @@ import Head from "next/head";
 import Fade from "@/components/Fade";
 import Image from "next/image";
 import Main from "@/app/sponsors/Main";
-import CusecSponsors from "@/app/sponsors/CusecSponsors";
+import PastSponsors from "@/app/sponsors/PastSponsors";
+import CurrentSponsors from "./CurrentSponsors";
 import WhySponsor from "./WhySponsor";
 import { motion } from "framer-motion";
 
@@ -38,15 +39,14 @@ export default function Sponsors() {
       />
 
       <div className="w-full">
-
-          {/* Top Left Gradient Lines */}
+        {/* Top Left Gradient Lines */}
         <Image
           src={"/images/top_left_gradient_lines.svg"}
           alt="top_left_gradient_lines"
           className="absolute top-[64px] z-10"
           width={200}
           height={250}
-          />
+        />
 
         {/* Bottom Right Gradient Lines */}
         <Image
@@ -77,12 +77,20 @@ export default function Sponsors() {
         <div className="flex flex-col items-center mt-20">
           <div className="mx-6 lg:mx-24 max-w-screen-lg lg:w-full md:-mt-3 mb-16">
             <Fade>
-              <CusecSponsors />
+              <CurrentSponsors />
             </Fade>
           </div>
         </div>
 
-        <div className="flex flex-col items-center">
+        {/* <div className="flex flex-col items-center mt-20">
+          <div className="mx-6 lg:mx-24 max-w-screen-lg lg:w-full md:-mt-3 mb-16">
+            <Fade>
+              <PastSponsors />
+            </Fade>
+          </div>
+        </div> */}
+
+        <div className="flex flex-col items-center mt-20 md:mt-0">
           <div className="mx-6 lg:mx-24 max-w-screen-lg lg:w-full md:-mt-3 mb-16">
             <Fade>
               <WhySponsor />
@@ -120,7 +128,7 @@ export default function Sponsors() {
                 >
                   <a
                     href="mailto:sponsor@cusec.net?subject=CUSEC 2024 Sponsorship Information Request"
-                    className="flex drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] bg-[#AD65E3] px-3 min-[390px]:px-10 md:px-20 py-1 text-center rounded-full uppercase text-[14px] md:text-[18px] font-semibold text-white tracking-wide transition ease-in-out duration-500 hover:scale-110 hover:bg-goldenApricot hover:text-white"
+                    className="flex drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] bg-[#AD65E3] px-3 min-[390px]:px-10 md:px-20 py-2 text-center rounded-full uppercase text-[14px] md:text-[18px] font-semibold text-white tracking-wide transition ease-in-out duration-500 hover:scale-110 hover:bg-goldenApricot hover:text-white"
                   >
                     Contact Us
                   </a>

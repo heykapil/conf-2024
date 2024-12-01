@@ -137,6 +137,13 @@ html {
   }
 }
 
+/*  Override default Swiper parameters in 'DaySchedule' component in Schedule page*/
+.SwiperScheduleNavigation {
+  --swiper-navigation-size: 35px;
+  --swiper-navigation-top-offset: 1%;
+  --swiper-navigation-sides-offset: 1%;
+}
+
 /* #46529800 calc(95 * var(--square-size)) */
 
 .decagon {
@@ -157,4 +164,85 @@ html {
     0% 35%,
     20% 10%
   );
+}
+
+@keyframes bobbing {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+}
+
+.bobbing-animation-1 {
+  animation: bobbing 4s ease-in-out infinite;
+}
+
+.bobbing-animation-2 {
+  animation: bobbing 3.5s ease-in-out infinite;
+}
+.bobbing-animation-3 {
+  animation: bobbing 3s ease-in-out infinite;
+}
+.bobbing-animation-4 {
+  animation: bobbing 2.5s ease-in-out infinite;
+}
+.bobbing-animation-5 {
+  animation: bobbing 2s ease-in-out infinite;
+}
+
+/* Popup styles in Schedule page */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.popup-content {
+  margin: auto;
+  background: rgba(0, 0, 0, 0);
+  width: 95%;
+  padding: 5px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@media (min-width: 640px) {
+  .popup-content {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .popup-content {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .popup-content {
+    width: 50%;
+  }
+}
+
+.popup-arrow {
+  color: rgb(255, 255, 255);
+}
+
+[role="tooltip"].popup-content {
+  width: 200px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 3px;
+}
+
+.popup-overlay {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+[data-popup="tooltip"].popup-overlay {
+  background: transparent;
 }
